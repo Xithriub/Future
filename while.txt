@@ -1,0 +1,273 @@
+№2
+s='Hello'
+i=0
+while i<len(s):
+    print(s[i])
+    i+=1c
+№4
+s='*'
+i=1
+while s!=i:
+    print('*'*i)
+    i+=1
+№5
+n=40
+while n!=0:
+    if n%5==0 or n%7==0:
+        print('Есть 12 чисел, которые делятся на 5 или 7')
+        print(n)
+    n-=1
+----------------------------------------------------------------------------
+n=40
+while n!=0:
+    if n%5==0:
+        print(n)
+    elif n%7==0:
+        print(n)
+    n-=1
+№6
+n=int(input())
+s=0
+while n>=0:
+    s+=2**n
+    n-=1
+print(s)
+№7
+kg=5
+f=6
+while kg!=f:
+    num=int(input('Введите массу:'))
+    if num<0:
+        print('Ввод не действителен')
+    else:
+        print(num*2.205)
+№8
+x=int(input())
+i=0
+x=str(x)
+while i<len(x):
+   print(x[i])
+   i+=1
+№9
+i=1
+n=0
+while n<100:
+    n+=1
+    print(n)
+    i+=2
+-----------
+
+№10
+import math
+f=7
+g=6
+while f!=g:
+    vvod=int(input('Введите число:'))
+    print('Факториал',vvod,'равен',math.factorial(vvod))
+--------------
+№11
+pindostupa=2211
+vvodpina=0
+popytka=5
+while(vvodpina!=pindostupa)and(popytka!=0):
+    print('Осталось попыток:',popytka)
+    vvodpina=int(input('Введите пароль:'))
+    popytka-=1
+if popytka==0:
+    print('Пароль не верный.Вы вышли из системы')
+else:
+    print('Пароль верный.Вы вошли в систему')
+---------
+№12
+vvod=int(input('Введите количество баллов:'))
+a=0
+b=0
+c=0
+d=0
+while vvod>0:
+    vvod=int(input('Введите количество баллов:'))
+    if vvod>=50 and vvod<=60:
+        d+=1
+    elif vvod>=61 and vvod<=74:
+        c+=1
+    elif vvod>=75 and vvod<=84:
+        b+=1
+    elif vvod>=85 and vvod<=100:
+        a+=1
+print(a,'A')
+print(b,'B')
+print(c,'C')
+print(d,'D')
+----------
+№13
+s=input()
+c=input()
+i=0
+while i<len(s):
+    if s[i]==c:
+        print(i)
+        break
+    i+=1
+№13
+s=input()
+c=input()
+i=0
+for f in s:
+    if s[i]==c:
+        print(i)
+        break
+    i+=1
+-------
+№14
+a=int(input('Введите число:'))
+b=int(input('Введите число:'))
+mxx=max(a,b)
+mn=min(a,b)
+while mn!=0:
+    ost=mxx%mn
+    mxx=mn
+    mn=ost
+else:
+    print(mxx)
+----------
+№16
+count1=0
+count2=0
+while True:
+    p1=input('k(amen),n(ojnisa),b(umaga)Выберите действие:')
+    p2=input('k(amen),n(ojnisa),b(umaga)Выберите действие:') 
+    if (p1=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='b' and p2=='n')or(p1=='b' and p2=='k')or(p1=='k' and p2=='n'):
+        count1 += 1
+    elif (p2=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='n' and p2=='b')or(p1=='b' and p2=='k')or(p1=='k' and p2=='n'):
+        count2 += 1
+    if count1>count2:
+        print('Player 1 is winner')
+    if count1==3:
+        print('Победа за 1 игроком')
+        break
+    elif count2>count1:
+        print('Player 2 is winner')
+    if count2==3:
+        print('Победа за 2 игроком')
+        break
+    elif p1==p2:
+        print('Nichya')
+
+p1 = input('k(amen), n(ojnisa), b(umaga)')   
+p2 = input('k(amen), n(ojnisa), b(umaga)')
+cp1=0
+cp2=0
+while cp1!=3 or cp2!=3:   
+    if (p1== 'k' and p2 == 'b') or (p1 == 'n' and p2 == 'k') or (p1 == 'n' and p2 =='b')or(p1=='b' and p2=='n'):
+        cp1 += 1
+    elif (p2 == 'k' and p1 == 'b') or (p2 == 'n' and p1 == 'k') or (p2 == 'n' and p1 =='b')or(p1=='b' and p2=='n'):
+        cp2+=1
+    elif p1 == p2:
+        print('Nichya')
+    p1 = input('k(amen), n(ojnisa), b(umaga)')   
+    p2 = input('k(amen), n(ojnisa), b(umaga)')
+    
+if cp1==3:
+    print ('win p1')
+elif cp2==3:
+    print ('win p2')
+-----------
+№17
+from random import randint
+doll=100
+rand=randint(1,2)
+while doll!=rand:
+    print(rand)
+    guess=int(input('Введите число:'))
+    if guess==rand:
+        doll+=9
+    elif guess!=rand:
+        doll-=10
+    elif doll==200:
+        print('Игра окончена')
+Списки
+№1
+b=eval(input())
+print(sum(b))
+print(b[-1])
+print(b[::-1])
+print(5 in b)
+b.pop()
+b.pop(0)
+print(b)
+b.sort()
+print(b)
+№2
+from random import randint
+j=[]
+for i in range(20):
+    j.append(randint(1,100))
+print(j)
+print(sum(j)/len(j))
+print(max(j))
+print(min(j))
+№3
+x=[8,9,10]
+x.insert(1,17)
+x.append(4)
+x.append(5)    
+x.append(6)
+x.pop(0)
+x.sort()
+x=x*2
+x.insert(3,25)
+print(x)
+№4
+z=eval(input())   
+for j in range(len(z)):
+    if z[j]>10:
+        z[j]==10
+print(z)
+
+№7
+n=eval(input())
+m=eval(input())
+z=[]
+for i in range(len(n)):
+    z.append(n[i]+m[i])
+print(z)
+
+n=[3,1,4]
+m=[1,5,9]
+z=[]
+for i in range(len(n)):
+    z.append(n[i]+m[i])
+print(z)
+№8
+n=int(input('Введите число:'))
+x=1
+z=[]
+while x!=n+1:
+    if n%x==0:
+        z.append(x)
+    x-=1
+print(z)
+
+
+
+
+for i in range(1,11):
+    for j in range(1,11):
+        if i==j:
+            print('0',end='')
+        else:
+            print('*',end='')
+    print()
+
+
+for i in range(1,11):
+    for j in range(1,11):
+        if i==j:
+            print('0',end='')
+        elif i>j :
+            print('-',end='')
+        elif i<j:
+            print('|',end='')
+    print()
+
+

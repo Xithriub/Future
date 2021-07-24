@@ -1,0 +1,693 @@
+27
+a=int(input())
+b=int(input())
+c=a
+a=b
+b=c
+a,b=b,a
+print(a,b)
+
+
+28
+r=float(input('Radius:'))
+s=3.14*r*r
+print('Площадь круга=',s)
+
+
+x = int(input())
+print(x,'x',2,'=',x*2)
+print(x,'x',2,'=',x*2, sep = '-----')
+print(x,' x ',3,' = ',x*3, sep = '*')
+print(x,' x ',4,' = ',x*4)
+print(x,' x ',5,' = ',x*5)
+print(x,' x ',6,' = ',x*6)
+print(x,' x ',7,' = ',x*7)
+print(x,' x ',8,' = ',x*8)
+print(x,' x ',9,' = ',x*9)
+print(x,' x ',10,' = ',x*10)
+
+#28
+##r = float(input('Radius:'))
+##s = 3.14 * r * r
+##print('Площадь круга = ',s)
+
+#27
+##a = int(input())
+##b = int(input())
+####c = a
+####a = b
+####b = c
+##a,b = b,a
+##print(a,b)
+
+#26
+##c = float(input('Temperature in Celcius:'))
+##f = (c * 1.8)+32
+##print(c,'degree in Fahrengeit')
+
+#25
+##f = float(input('Temperature in Fahrengeit:'))
+##c = (f - 32)/1.8
+##print(c,'degree in Celcius')
+
+#24
+##cena = int(input('Введите цену:'))
+##p = int(input('Введите процент:'))
+##chaevye = (cena*p)/100
+##total = cena + chaevye
+##print('Общая сумма = ',total)
+
+#23
+##x = int(input('x:'))
+##y = int(input('y:'))
+##z = int(input('z:'))
+##summa = x + y + z
+##srednee = summa/3
+##print('Сумма = ', summa, 'Среднее = ',srednee)
+
+#22 - a
+##kg = float(input('Enter the kg:'))
+##ft = kg * 2.2
+##print('Weight in funts ', ft)
+
+###22 - b
+##ft = float(input('Enter the kg:'))
+##kg = ft / 2.2
+##print('Weight in funts ', kg)
+
+#21
+##x = int(input('Enter any number:'))
+##print(x, x*2,x*3,x*4,x*5, sep = '---')
+
+#Round
+##x = 123456.2563569
+##print(round(x))
+##y = round(x)
+##print(y)
+
+#1
+x = '*'*10
+print(x)
+print(x)
+print(x)
+print(x)
+print(x)
+print(x)
+print(x)
+print('*'*10)
+print('****')
+
+imya = input('Введите ваше имя:')
+fam = input('ВВедите вашу фамилию:')
+print(imya, fam)
+email = imya + fam + '@gmail.com'
+email2 = imya + '.' + fam + '@gmail.com'
+email3 = fam + imya + '@gmail.com'
+print('Первый вариант:',email)
+print('Второй вариант:',email2)
+print('Третий вариант:',email3)
+print('''Введите ваше имя:Введите ваше имя:Введите ваше имя:Введите ваше имя:
+Введите ваше имя:Введите ваше имя:Введите ваше имя:Введите ваше имя:
+Введите ваше имя:Введите ваше имя:Введите ваше имя:Введите ваше имя:''')
+
+
+x = 12 #integer 
+y = 12.5 #float
+z = 'hello' # string
+f = True # boolean
+print(x*y)
+
+№2
+a=int(input('Введите число:'))
+b=int(input('ВВедите второе число:'))
+Summa=a+b
+if Summa>100:
+    print('Это число больше чем 100')
+
+№3
+a=int(input('Введите первое число:'))
+b=int(input('Введите второе число:'))
+if a>b:
+    print('Первое число больше чем второе' )
+
+#4
+a=int(input('Введите первое число:'))
+b=int(input('Введите второе число:'))
+if a>b:
+    print('Первое число больше чем второе' )
+else:
+    print('Второе число больше чем первое')
+
+#5
+dlina=int(input('Введите длину в сантиметрах:'))
+duym=dlina/2.54
+if dlina<-0:
+    print('Запись недействительна')
+else:
+    print('Конвертация в дюймах=',duym)
+
+№6
+Fah=int(input('Celsius in Fahrengeit:'))
+Cels=int(input('Fahrengeit in Celsius:'))
+F=(Fah*9/5)+32
+C=(Cels-32)*5/9
+print('Celsius in Fahrengeit=',F)
+print('Fahrengeit in Celsius=',C)
+
+№7
+temp=int(input('Temperature on Celsius:'))
+if temp>-273.15:
+         print('Температура не действительна')
+elif temp==-237.15:
+         print('Температура является абсолютным 0')
+elif temp==-237.15 and temp==0:
+         print('Температура ниже точки замерзания')
+elif temp==0:
+         print('Температура находится на точке замерзания')
+elif temp==0 or temp==100:
+         print('Температура в пределах нормы')
+elif temp==100:
+         print('Температура находится на уровне точки кипения')
+if temp>100:
+         print('Температура выше точки кипения')
+
+
+
+tovar=int(input('Сколько будете покупать:'))
+if tovar<10:
+   print('Общая сумма:',tovar*12)
+elif 10 <= tovar <=99:
+   print('Общая сумма:',tovar*10)
+elif tovar>=100:
+
+№8
+credit=int(input('Сколько кредитов вы взяли:'))
+if credit<=23:
+    print('Студент первокурсник')
+elif 24<credit<53:
+    print('Студент второкурсник')
+elif 54<credit<83:
+    print('Студент учится в третьем курсе')
+elif 84<credit<120:
+    print('Студент выпускник')
+№9
+tovar=int(input('Сколько будете покупать:'))
+if tovar<10:
+   print('Общая сумма:'tovar*12)
+elif 10 <= tovar <=99:
+   print('Общая сумма:'tovar*10)
+elif tovar>=100:
+   print('Общая сумма:'tovar*7)
+
+№10
+a=float(input())
+b=float(input())
+if abs(b-a)<=0.001:
+    print('Близко')
+else:
+    print('Далеко')
+№11
+A=int(input('Введите год:'))
+if (A%4==0 and A%100!=0) or A%400==0:
+    print('Год високосный')
+else:
+    print('Год не високосный')
+
+№12
+A=int(input('Введите первое число:'))
+B=int(input('Введите второе число:'))
+if A%B==0:
+    print(A, 'делиться', 'на', B, 'без', 'остатка')
+else:
+    print(A, 'делиться', 'на', B, 'с', 'остатком',1)
+
+№13
+c=int(input('Vremya:'))
+v=input('Utra(1) ili vechera(2):')
+b=int(input('skolko vremeni v buduwe:'))
+if v=='1':
+   f=(c+b)%24
+   print(c+b,':00',sep='')
+elif v=='2':
+   x=(c+b)%12
+   print(x,':00',sep='')
+
+
+№14
+p1=input('k(amen),n(ojnisa),b(umaga)')
+p2=input('k(amen),n(ojnisa),b(umaga)')
+if (p1=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='n' and p2=='b')or(p1=='b' and p2=='k'):
+    print('vigral pervyi igrok')
+elif (p2=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='n' and p2=='b')or(p1=='b' and p2=='k'):
+    print('vigral vtoroi igrok')
+elif p1==p2:
+    print('Nichya')
+№15
+x=int(input('Введите первое число:'))
+y=int(input('Введите второе число:'))
+z=int(input('Введите третье число:'))
+if x<y<z or z<y<x or x==y or y==z:
+    print(y)
+elif y<x<z or x==z or z<x<y:
+    print(x)
+else:
+    print(z)
+
+№16
+a=int(input('Введите длину угла:'))
+b=int(input('Введите длину угла:'))
+c=int(input('Введите длину угла:'))
+if a<=0 or b<=0 or c<=0:
+    print('Недействительные числа')
+elif a+b+c==180:
+    print('Треугольник')
+№17
+a=int(input('1:'))
+b=int(input('2:'))
+c=int(input('3:'))
+d=int(input('4:'))
+if a==b and b==c and c==d:
+   print('Kvadrat')
+elif a==c and b==d or a==d and b==c or a==b and b==c:
+   print('pramougolnik')
+else:
+   print('Ne to i ne drugoe')
+№18
+a=int(input('Введите число:'))
+if a<0:
+    print('Otric')
+elif a==0:
+    print('Nol')
+else
+    print('Pozitiv')
+№19
+a=int(input('Введите число:'))
+if a%2==0:
+   print('Четное число')
+elif a%2!=0:
+   print('Не четное число')
+№20
+a=input()
+b=input()
+if len(a)==len(b):
+    print('Podhodit')
+else:
+    print('Ne podhodit')
+№21
+vvod=int(input('Сколько у вас кредитов?:'))
+if vvod==240:
+    print('У вас достаточно кредитов для окончания учебы')
+elif vvod<240:
+    print('У вас не достаточно кредитов для окночания учебы')
+№22
+a=int(input('Введите число:'))
+if a%3==0:
+    print('Число кратно 3')
+elif a%5==0:
+    print('Чилсо кртано 5')
+elif a%7==0:
+    print('Число кратно 7')
+else:
+    print('Операция не верна')
+
+№24
+age=int(input())
+if 0<=age and age<=1:
+    print('Младенец')
+elif 1<age and age<6:
+    print('Malyw')
+elif 6<age and age<11:
+    print('Ребенок')
+elif 11<age and age<18:
+    print('Подросток')
+elif 18<age and age<45:
+    print('Взрослый')
+elif 45<age and age<70:
+    print('Старик')
+    
+№25
+from math import sqrt
+r1=int(input())
+x1=int(input())
+y1=int(input())
+r2=int(input())
+x2=int(input())
+y2=int(input())
+distSq=((x1-x2)**2+(y1-y2)**2)**(1/2)
+if distSq +r2<=r1 or distSq +r1<=r2:
+    print('Внутри')
+
+Week - 3
+№1
+
+for i in range(101):
+    print('Farhad')
+
+№2
+for i in range(100):
+    print(end='Farhad')
+for i in range(100):
+    print('Farhad')
+
+№3
+for i in range(100):
+    print(i+1,'Ваше имя')
+
+№4
+for i in range(21):
+    print(i,'---',i*i)
+№5
+for i in range(8,89,3):
+    print(i)
+№6
+for i in range(100,0,-2):
+    print(i)
+№7
+for i in range(10):
+    print(end= 'A')
+for i in range(8):
+    print(end= 'B')
+for i in range(5):
+    print(end= 'CD')
+for i in range(7):
+    print(end= 'F')
+№8
+vvod=str(input('Введите свое имя:'))
+chislo=int(input('Сколько раз напечатать его?'))
+for i in range(chislo):
+    print(vvod)
+№9
+for i in range(1):
+    print(1)
+    print(12)
+    print(123)
+    print(1234)
+    print(12345)
+№10
+shir=int(input('Укажите ширину:'))
+vyu=int(input('Укажите высоту:'))
+for i in range(4):
+    print('*'*20)
+№16
+chislo=int(input('Введите число:'))
+s=0
+for i in range(1,n+1):
+   s=s+i
+print('Ssumma chisel=',s)
+
+№17
+count1=0
+count2=0
+for i in range(5):
+    p1=input('k(amen),n(ojnisa),b(umaga)')
+    p2=input('k(amen),n(ojnisa),b(umaga)') 
+    if (p1=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='b' and p2=='n')or(p1=='b' and p2=='k'):
+        count1 += 1
+    elif (p2=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='n' and p2=='b')or(p1=='b' and p2=='k'):
+        count2 += 1
+    if count1>count2:
+        print('Player 1 is winner')
+    elif count2>count1:
+        print('Player 2 is winner')
+    else:
+        print('Nichya')
+№19
+what=input('Какую операцию вы хотите исрользовать?(+,-,*,/):')
+a=float(input('Первое число:'))
+b=float(input('Второе число:'))
+for i in range(1):
+   if what=='+':
+    print(a+b)
+    print('Результат:')
+if what=='-':
+    print(a-b)
+    print('Результат:')
+if what=='*':
+    print(a*b)
+    print('Результат:')
+if what=='/':
+    print(a/b)
+    print('Результат:')
+№20
+n=int(input())
+p=1
+for i in range(2,n+1):
+    p=p*i
+print('!=',p)
+№21
+chislo=int(input('Введите число:'))
+for i in range():
+    if chislo%chislo==0:
+        print('Число является простым')
+    elif chislo%chislo!=0:
+        print('Число не является простым')
+
+№22
+chislo=int(input('Введите число:'))
+for i in range(2,11):
+        print(chislo,'*',i,'=',chislo*i)
+№23
+n=int(input('Вход:'))
+for i in range(5):
+    x=n%10:
+    print(x)
+    n//10
+№24
+ chis=int(input('Вход:'))
+for i in range(1,chis):
+    for j in range(i):
+        print(i,end='')
+    print()
+   
+
+
+what=input('Какую операцию вы хотите исрользовать?(+,-,*,/):')
+a=float(input('Первое число:'))
+b=float(input('Второе число:'))
+if what=='+':
+    c=a+b
+    print('Результат:'+str(c))
+elif what=='-':
+    c=a-b
+    print('Результат:'+str(c))
+if what=='*':
+    c=a*b
+    print('Результат:'+str(c))
+
+temp=int(input('Введите температуру воздуха:'))
+if temp>30:
+    print('Жара')
+elif temp>=11 and temp<=30:
+    print('Тепло')
+elif temp>=0 and temp<=10:
+    print('Прохладно')
+elif temp<0:
+    print('Мороз')
+if temp<50 or temp>0:
+    print('Экстремальная температура!')
+
+vsego=int(input('Сколько чисел ввести?:'))
+spisok=[]
+import random
+for i in range(vsego):
+    spisok.append(random.randint(-10,10))
+    print(spisok[i])
+kolvoPolozh=kolvoOtric=kolvoNul=0
+for j in spisok:
+    if j==0:
+        kolvoNul+=1
+    elif j>0:
+         kolvoPolozh+=1
+    elif j<0:
+        kolvoOtric+=1
+print('Ноль:',kolvoNul)
+print('Положительных:',kolvoPolozh)
+print('Отрицательных:',kolvoOtric)
+
+
+
+vsego=int(input('Сколько чисел ввести?:'))
+spisok=[]
+import random
+for i in range(vsego):
+    spisok.append(random.randint(-10,10))
+    print(spisok[i])
+kolvoChet=kolvoNechet=kolvoNul=0
+for j in spisok:
+    if j==0:
+        kolvoNul+=1
+    elif j%2==0:
+         kolvoChet+=1
+    elif j%2!=0:
+        kolvoNechet+=1
+print('Ноль:',kolvoNul)
+print('Четных:',kolvoChet)
+print('Нечетных:',kolvoNechet)
+
+week 4:
+№2
+vvod=int(input('Угадайте число:'))
+from random import randint,random
+x=randint(1,10)
+if x==vvod:
+    print('Вы угадали')
+elif x!=vvod:
+    print('Вы не угадали.','Правильный ответ=',x)
+№3
+for i in range(1,50):
+    from random import randint,random
+    x=randint(2,5)
+    print(i**x)
+№4
+name=int(input('Введите имя'))
+x=randint(1,10)
+print(name*x)
+№5
+x=random()*10
+print(round(x,2))
+№6
+from random import randint,random
+for i in range(50):
+    x = randint(1,i)
+    print(x)    
+№7
+x=int(input('Введите число:'))
+y=int(input('Введите число:'))
+print(abs(x-y)/(x+y))
+№8
+x=int(input('Введите угол:'))
+if x<0 and x>-181:
+    print(abs(x)+180)
+else:
+    print(x)
+№9
+s=int(input('Введите количество секунд:'))
+m=s//60
+ss=s%60
+print('Minuty:',m,'Sekunda:',ss)
+№11
+vvod=int(input('Введите вес в килограммах:'))
+form=vvod*2.205
+print(round(form))
+
+Week 5:
+№3
+string=str(input('Введите строку:'))
+print(len(string))
+print(string*10)
+print(string[0:1])
+print(string[0:3])
+print(string[::-1])
+print(string[1:4])
+print(string.upper())
+print(len(string*''))
+№4
+x='Hello'
+c=0
+for i in x:
+    c += 1
+print(c)
+№6
+vvod=str(input('Введите слово:'))
+if 'a'in vvod:
+    print('True')
+elif 'e'in vvod:
+    print('True')
+if 'a' not in vvod:
+    print('False')
+elif 'e' not in vvod:
+    print('False')
+if 'i' in vvod:
+    print('True')
+elif 'o' in vvod:
+    print('True')
+if 'i' not in vvod:
+    print('False')
+elif 'o' not in vvod:
+    print('False')
+№7
+slovo=str(input('Введите слово:'))
+bukva=str(input('Введите букву:'))
+for i in slovo:
+    if bukva in slovo:
+        print(slovo[i])
+    elif bukva not in slovo:
+        print(-1)
+№9
+n=str(input('Enter a name:'))
+s=str(input('Enter your surname:'))
+d=''
+for i in range(len(n)):
+    print(n,s)
+    print(n[i])
+    s=s+n[i]
+    print('Your password:',s)
+№10
+t=str(input('Word:'))
+y=str(input('Word:'))
+print(t[:2]+y[2:])
+print(y[:2]+t[2:])
+
+
+tovar=int(input('Сколько всего товаров?:'))
+naimenovanie=[]
+tsena=[]
+kolvo=[]
+itogo=0
+for i in range(tovar):
+    naimenovanie.append(str(input('Товар:')))
+    tsena.append(float(input('Цена:')))
+    kolvo.append(float(input('Количество:')))
+# открываем файл в Check.txt для записи
+f=open('Check.txt','w')
+# вписываем в файл заголовки столбцов чека
+print('Наименование', 'Цена(сомов)', 'Количество(шт)', 'Стоимость (сомов)', sep='\t', file=f)
+# в цикле заполняем столбцы и рассчитываем стоимость
+for i in range(tovar):
+    print(naimenovanie[i],tsena[i], kolvo[i], tsena[i]*kolvo[i],sep='\t\t', file=f)
+    # накапливаем итоговую сумму
+    itogo=itogo+tsena[i]*kolvo[i]
+# выводим линию
+print('-'*20,file=f)
+# выводим итоговую сумму
+print('ИТОГО:',round(itogo,2),'сомов к оплате',file=f)
+# закрываем файл
+f.close()
+
+#VC0JJV09
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

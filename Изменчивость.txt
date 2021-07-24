@@ -1,0 +1,1000 @@
+№2
+s='Hello'
+i=0
+while i<len(s):
+    print(s[i])
+    i+=1c
+№4
+s='*'
+i=1
+while s!=i:
+    print('*'*i)
+    i+=1
+№5
+n=40
+while n!=0:
+    if n%5==0 or n%7==0:
+        print('Есть 12 чисел, которые делятся на 5 или 7')
+        print(n)
+    n-=1
+----------------------------------------------------------------------------
+n=40
+while n!=0:
+    if n%5==0:
+        print(n)
+    elif n%7==0:
+        print(n)
+    n-=1
+№6
+n=int(input())
+s=0
+while n>=0:
+    s+=2**n
+    n-=1
+print(s)
+№7
+kg=5
+f=6
+while kg!=f:
+    num=int(input('Введите массу:'))
+    if num<0:
+        print('Ввод не действителен')
+    else:
+        print(num*2.205)
+№8
+x=int(input())
+i=0
+x=str(x)
+while i<len(x):
+   print(x[i])
+   i+=1
+№9
+i=1
+n=0
+while n<100:
+    n+=1
+    print(n)
+    i+=2
+-----------
+
+№10
+import math
+f=7
+g=6
+while f!=g:
+    vvod=int(input('Введите число:'))
+    print('Факториал',vvod,'равен',math.factorial(vvod))
+--------------
+№11
+pindostupa=2211
+vvodpina=0
+popytka=5
+while(vvodpina!=pindostupa)and(popytka!=0):
+    print('Осталось попыток:',popytka)
+    vvodpina=int(input('Введите пароль:'))
+    popytka-=1
+if popytka==0:
+    print('Пароль не верный.Вы вышли из системы')
+else:
+    print('Пароль верный.Вы вошли в систему')
+---------
+№12
+vvod=int(input('Введите количество баллов:'))
+a=0
+b=0
+c=0
+d=0
+while vvod>0:
+    vvod=int(input('Введите количество баллов:'))
+    if vvod>=50 and vvod<=60:
+        d+=1
+    elif vvod>=61 and vvod<=74:
+        c+=1
+    elif vvod>=75 and vvod<=84:
+        b+=1
+    elif vvod>=85 and vvod<=100:
+        a+=1
+print(a,'A')
+print(b,'B')
+print(c,'C')
+print(d,'D')
+----------
+№13
+s=input()
+c=input()
+i=0
+while i<len(s):
+    if s[i]==c:
+        print(i)
+        break
+    i+=1
+№13
+s=input()
+c=input()
+i=0
+for f in s:
+    if s[i]==c:
+        print(i)
+        break
+    i+=1
+-------
+№14
+a=int(input('Введите число:'))
+b=int(input('Введите число:'))
+mxx=max(a,b)
+mn=min(a,b)
+while mn!=0:
+    ost=mxx%mn
+    mxx=mn
+    mn=ost
+else:
+    print(mxx)
+----------
+№16
+count1=0
+count2=0
+while True:
+    p1=input('k(amen),n(ojnisa),b(umaga)Выберите действие:')
+    p2=input('k(amen),n(ojnisa),b(umaga)Выберите действие:') 
+    if (p1=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='b' and p2=='n')or(p1=='b' and p2=='k')or(p1=='k' and p2=='n'):
+        count1 += 1
+    elif (p2=='k' and p2=='b')or(p1=='n' and p2=='k')or(p1=='n' and p2=='b')or(p1=='b' and p2=='k')or(p1=='k' and p2=='n'):
+        count2 += 1
+    if count1>count2:
+        print('Player 1 is winner')
+    if count1==3:
+        print('Победа за 1 игроком')
+        break
+    elif count2>count1:
+        print('Player 2 is winner')
+    if count2==3:
+        print('Победа за 2 игроком')
+        break
+    elif p1==p2:
+        print('Nichya')
+
+p1 = input('k(amen), n(ojnisa), b(umaga)')   
+p2 = input('k(amen), n(ojnisa), b(umaga)')
+cp1=0
+cp2=0
+while cp1!=3 or cp2!=3:   
+    if (p1== 'k' and p2 == 'b') or (p1 == 'n' and p2 == 'k') or (p1 == 'n' and p2 =='b')or(p1=='b' and p2=='n'):
+        cp1 += 1
+    elif (p2 == 'k' and p1 == 'b') or (p2 == 'n' and p1 == 'k') or (p2 == 'n' and p1 =='b')or(p1=='b' and p2=='n'):
+        cp2+=1
+    elif p1 == p2:
+        print('Nichya')
+    p1 = input('k(amen), n(ojnisa), b(umaga)')   
+    p2 = input('k(amen), n(ojnisa), b(umaga)')
+    
+if cp1==3:
+    print ('win p1')
+elif cp2==3:
+    print ('win p2')
+-----------
+№17
+from random import randint
+doll=100
+rand=randint(1,2)
+while doll!=rand:
+    print(rand)
+    guess=int(input('Введите число:'))
+    if guess==rand:
+        doll+=9
+    elif guess!=rand:
+        doll-=10
+    elif doll==200:
+        print('Игра окончена')
+Списки
+№1
+b=eval(input())
+print(sum(b))
+print(b[-1])
+print(b[::-1])
+print(5 in b)
+b.pop()
+b.pop(0)
+print(b)
+b.sort()
+print(b)
+№2
+from random import randint
+j=[]
+for i in range(20):
+    j.append(randint(1,100))
+print(j)
+print(sum(j)/len(j))
+print(max(j))
+print(min(j))
+№3
+x=[8,9,10]
+x.insert(1,17)
+x.append(4)
+x.append(5)    
+x.append(6)
+x.pop(0)
+x.sort()
+x=x*2
+x.insert(3,25)
+print(x)
+№4
+z=eval(input())   
+for j in range(len(z)):
+    if z[j]>10:
+        z[j]==10
+print(z)
+
+№7
+n=eval(input())
+m=eval(input())
+z=[]
+for i in range(len(n)):
+    z.append(n[i]+m[i])
+print(z)
+
+n=[3,1,4]
+m=[1,5,9]
+z=[]
+for i in range(len(n)):
+    z.append(n[i]+m[i])
+print(z)
+№8
+n=int(input('Введите число:'))
+x=1
+z=[]
+while x!=n+1:
+    if n%x==0:
+        z.append(x)
+    x-=1
+print(z)
+№9
+from random import randint
+s=[0,0,0,0,0,0,0,0,0,0,0,0]
+for i in range(100000):
+    k1=randint(1,6)
+    k2=randint(1,6)
+    summa=k1+k2
+    s[summa-2]+=1
+for i in range(len(s)):
+    s[i]=s[i]/1000
+print(s)
+№10
+x=[1,2,3,4,5,6,7]
+x.insert(0,x[-1])
+x.pop()
+print(x)
+№11
+s=[]
+z=[0]
+for i in range(10):
+    s.append(1)
+    s.extend(z*i)
+print(s)
+№12
+s=[]
+from random import randint
+for i in range(100):
+    s.append(randint(0,1))
+print(s)
+n=0
+m=0
+for j in s:
+    if j==0:
+        n+=1
+    else:
+        if m<=n:
+            m=n
+            n=0
+        n=0
+print(s)
+print('Самое большое количество нулей:',m)
+№13
+s=[1,1,2,3,4,3,0,0]
+z=[]
+for i in s:
+    if i not in z:
+        z.append(i)
+print(z)
+
+WEEk - 10:
+№1
+x=input()
+w=x.split()
+c=0
+for i in w:
+    if i=='a'or i=='an' or i=='the':
+        c+=1
+print(c)
+№2
+x=input()
+y=x.split()
+print(y)
+x2='+'.join(x)
+print(x2)
+№3
+x=input('Введите число:')
+slova=x.split()
+print(slova[2])
+
+x=input('Введите число:')
+slova=x.split()
+print(slova[2])
+z=[slova[i] for i in range(0,len(slova),3)]
+print(z)
+№4
+from random import shuffle
+x=input('Введите число:')
+slova=x.split()
+shuffle(slova)
+print(slova)
+№5
+from random import sample
+x=['Всем привет,сегодня я бы хотел вам сообщить одну весть','Сегодня мы отправляемся в школу,пожалуйста не забудбьте взять с собой маску и антисептик','Привет,завтра я не смогу присутствовать на уроке','Здравствуй мой друг']
+s=sample(x,2)
+print(s)
+№7
+from random import sample
+l=list(range(1,11))
+ludi=sample(l,6)
+for i in range(10000):
+    loto=sample(l,6)
+    print(loto)
+    if loto==ludi:
+        print(i)
+        break
+№8
+from random import choice
+x=['2*8=','3+234=','81*2=','6*11=','45+100=']
+g=[16,237,162,66,145]
+v=[]
+i=0
+c=0
+while i<5:
+    z=choice(x)
+    print(z)
+    ans=int(input())
+    indeks_voprosa=x.index(z)
+    if ans==g[indeks_voprosa]:
+        c+=1
+    i+=1
+print(c)
+№10
+tel=input()
+t=tel.split('-')
+print(t)
+o=list(range(500,510))
+print(o)
+mega=list(range(550,560))
+bee=list(range(771,780))
+ss=o+mega+bee
+print(ss)
+if int(t[0])in ss:
+    if t[1].isdigit()and t[2].isdigit()and t[2].isdigit():
+        print('valid')
+    else:
+        print('invalid')
+№11
+z=[]
+t=['uare','iam','usee']
+z=[t[i][1:] for i in range(len(t))]
+print(z)
+№12
+t=[]
+for i in range(100,1001):
+    s=str(i)
+    if s==s[::1]:
+        t.append(i)
+t=[i for i in range(100,1001)if str(i)==str(i)[::-1]]
+print(t)
+№14
+L = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
+k=[L[i+1]-L[i] for i in range(len(L)-1)]
+m=max(k)
+p=(k.count(2)/len(k))*100
+print(k)
+print(m)
+print(p)
+№15
+from random import randint
+z=[[randint(1,100)]*4 for i in range(4)]
+k=sum([sum(i)for i in z])/16
+print(z)
+print(k)
+
+СЛОВАРИ И КОРТЕЖИ
+№1,2
+prod={}
+for i in range(3):
+    p=input()
+    ts=int(input())
+    prod[p]=ts
+print(prod)
+pro=input()
+if pro in prod:
+    print(prod[pro])
+else:
+    print('Продукта',pro,'нету в словаре')
+d=int(input())
+yu=d*84.10
+for k,v in prod.items():
+    if v<yu:
+        print(k)
+№3
+days = {'January':31, 'February':28, 'March':31,'April':30, 'May':31, 'June':30, 'July':31, 'August':31, 
+'September':30, 'October':31, 'November':30, 'December':31}
+d=input()
+for i in days:
+    if d in i[0:3]:
+        print(days[i])
+for k,v in days.items():
+    if k==d:i
+        print(v)
+s=list(days.items())
+s.sort
+k=[]
+for i,j in days.items():
+    k.append((j,i))
+    if j==31:
+        print(i)
+k.sort()
+print(k)
+№4
+names={'Fahrum':'224','Alex':'335','Saimon':'771','Diana':'112','Lex':'664'}
+name=input()
+p=int(input())
+if name in names:
+    if p==names[name]:
+        print('Вы вошли в систему')
+    else:
+        print('Не правильный пароль')
+else:
+    print('Не действительное имя пользователя')
+№5
+s={}
+komanda=input()
+w=int(input())
+l=int(input())
+s[komanda]=[w,l]
+proc=w/(w+l)
+print(proc)
+h=[]
+for i in s:
+    h.append(i[i][10])
+    print(i)
+    print(k)
+#6
+s=[[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5]]
+d=dict()
+for i in s:
+    for j in i:
+        if j in d:
+            d[j]+=1
+        else:
+            d[j]-=1
+print(d)  
+
+#names={'Fahrum':224,'Alex':335,'Saimon':771,'Diana':112,'Lex':664}
+#for k,v in names.items():
+    #w=str(input('Введите имя пользователя:'))
+    #k=int(input('Введите пароль:'))
+    #if w!=k:
+        #print('Этот человек является не дейтсвительным пользоваетлем системы')
+    #elif w==k:
+        #print(v)
+#for i,j in names.items():
+    #r=str(input('Введите имя пользователя:'))
+    #q=int(input('Введите пароль:'))
+    #if q!=j:
+        #print('Пароль действителен')
+    #elif q==j:
+        #print('Вы успешно вошли в систему')
+
+
+def plus(a,b):
+    return a+b
+def minus(a,b):
+    return a-b
+def delenie(a,b):
+    return a/b
+def umnozhenie(a,b):
+    return a*b
+x=int(input('Введите x: '))
+y=int(input('Введите y: '))
+znak=str(input('Введите знак операции: + - / *' +'\n'))
+print('Ответ:',end='')
+if znak=='+':
+    print(plus(x,y))
+elif znak=='-':
+    print(minus(x,y))
+elif znak=='/':
+    print(delenie(x,y))
+elif znak=='*':
+    print(umnozhenie(x,y))
+
+
+def proverka(a):
+    if a<0:
+        print('Отрицательное число. Меняем на положительное:')
+        print(a*(-1))
+    else:
+        print('Неотрицательное. Удваиваем:')
+        print(a*2)
+    
+for i in range(5):
+    x=int(input('Введите число:'))
+    y=proverka(x)
+print('Программа завершена.')
+
+ФУНКЦИИ
+№1
+z=int(input())
+x=int(input())
+def rectangle(n,m):
+    for i in range(n):
+        print('*'*m)
+rectangle(z,x)
+№2
+q=['daser','saimon','deep','cheese']
+def ad_ex(g):
+    for i in q:
+        print(i+'!')
+ad_ex(q)
+
+def ad_ex2(q):
+    p=[]
+    for j in q:
+        p.append(slovo+'!')
+    return p
+№3
+def sum_digits(n):
+    return sum([int(i) for i in str(n)])
+    s=0
+    for i in str(n):
+        s+=int(i)
+x=int(input())
+z=sum_digits(x)
+print(z)
+№5
+def first_diff(s1,s2):
+    if s1==s2:
+        return-1
+    else:
+        for i in range(min(len(s1),len(s2))):
+            if s1[i]!=s2[i]:
+                return i
+x=input()
+y=input()
+print(first_diff(x,y))
+
+№6
+from math import factorial
+def binom(n,k):
+    return factorial(n)/(factorial(k)*factorial(n-k))
+                         
+n=int(input())
+k=int(input())
+print(binom(n,k))
+№7
+import random
+from random import randint
+def rand(n):
+    return randint(10**(n-1),10**n-1)
+g=int(input())
+print(rand(g))
+№8
+def number_of_factors(n):
+    w=0
+    for i in range(1,n):
+        if n%i==0:
+            w+=1
+    return w            
+n=int(input())
+print(number_of_factors(n))
+№9
+№9
+def deff_function(n):
+    q=[]
+    for i in range(1,n):
+        if n%i==0:
+            q.append(i)
+    return(q)
+n=int(input('Введите значение:'))
+print(deff_function(n))
+№10
+def closset(t,n):
+    '''
+    t: list
+    n: list
+    '''
+    m=None
+    for i in range(len(t)):
+        if t[i]<m and t[i]<n:
+            m=t[i]
+        return m
+№11
+def matches(s1,s2):
+    c=0
+    for i in range(min(len(s1),len(s2))):
+        if s1[i]==s2[i]:
+            c+=1
+    return c
+z=matches('python','path')
+print(z)
+№12
+def find_all(word,letter):
+    z=[]
+    for i in range(len(word)):
+        if word[i]==letter:
+            z.append(i)
+    return z
+№13
+def change_case(slovo):
+    q=''
+    for i in slovo:
+        if i.islower():
+            q+=i.upper()
+        else:
+            q+=i.lower
+    return q
+№14
+def is_sorted(q):
+    for i in range(1,len(q)):
+        if q[i-1]>q[i]:
+            return False
+    return True
+№16
+def one_way(r1,r2):
+    if len(r1)==len(r2):
+        return True
+    for i in range(len(r1)):
+        if r1[i]!=r2[i] and r1[:i]==r2[:i] and r1[i+1:]==r2[i+1:]:
+            return True
+qq=one_way('water','wafer')
+print(qq)
+
+УПРАЖНЕНИЯ
+№1,2,3,4,5
+def plus(a,b):
+    return a+b
+def minus(a,b):
+    return a-b
+def delenie(a,b):
+    return a/b
+def umnozhenie(a,b):
+    return a*b
+x=int(input('Введите x: '))
+y=int(input('Введите y: '))
+znak=str(input('Введите знак операции: + - / *' +'\n'))
+print('Ответ:',end='')
+if znak=='+':
+    print(plus(x,y))
+elif znak=='-':
+    print(minus(x,y))
+elif znak=='/':
+    print(delenie(x,y))
+elif znak=='*':
+    print(umnozhenie(x,y))
+№6
+def celsius_to_fahrenheit(x):
+    '' '
+    x: int или float
+    возвращает: int или float
+    '' '
+    return(9/5)*(x+32)
+def fahrenheit_to_celsius(x):
+    '' '
+    x: int или float
+    возвращает: int или float
+    '' '
+    return(5/9)*(x-32)
+temp=float(input())
+c=input('Fahrenheit or Celsius:')
+if c=='f':
+    x=fahrenheit_to_celsius(temp)
+    print(temp,'C=',x,'F')
+else:
+    x=celsius_to_fahrenheit(temp)
+    print(temp,'F=',x,'C')
+№7,8
+def cube(x):
+    return x**2
+x=int(input())
+print(cube(x))
+
+def cube3(q):
+    return q**3
+q=int(input())
+print(cube3(q))
+№9
+def rectangle_area(x,y):
+    return x*y
+
+#10
+def rectangle_perimetr(x,y):
+    return 2*(x+y)
+x=int(input())
+y=int(input())
+print(rectangle_perimetr(x,y))
+#11
+from math import pi
+def circle_area (r):
+    return pi*r**2
+
+#12
+def evalQuadratic (a, b, c, x):
+    return a*x**2+b*x*c
+#13
+def clip (lo, x, hi):
+    return(max(lo,x),hi)
+#14
+def fourthPower(x):
+    x**4
+#15
+def odd(x):
+    return x%2==0
+
+ЧТЕНИЕ ИЗ ФАЙЛОВ
+№1
+z=open('Checki.txt','w')
+print('GWashington', 83,file=z)
+print('JAdams',86,file=z)
+z.close()
+q=open('Checki.txt')
+t=open('grades.txt','w')
+for i in q:
+    d =i.strip()
+    p =t.split()
+    print(t[0],int(t[1])+5, file =t)
+t.close()
+№2
+q=open('grades.txt','w')
+print('GWashington', 83, 77, 54)
+print('JAdams',86,69,90)
+for i in q:
+    c=0
+    q=i.strip()
+    st=q.split()
+    if int(st[1])>10 and int(st[2])>10and int(st[3])>10:
+        c=+1
+print(c)
+q.close
+№3
+f=open('logfile.txt')
+for i in f:
+    z=i.strip()
+    er=z.split(',')
+    chasy=int(er[1].strip()[0:2])
+    minuty=int(er[1].strip()[3:])
+    hinput=chasy*60+minuty
+    chasy2=int(er[2].strip()[0:2])
+    minuty2=int(er[2].strip()[3:])
+    hOutput=chasy2*60+minuty2
+    if hOutput-hinput>=60:
+        print(er[0])
+f.close()
+№4
+f=open('students.txt',)
+f2=open('newss.txt','a')
+for i in f:
+    i=i.strip()
+    t=i.split()
+    print(t[0][0].upper()+t[0][1:],t[1][0].upper()+t[1][1:],t[2],'301-'+t[3],file=f2)
+f2.close()
+№5
+q=open('namelist.txt')
+ds=input('Введите инициал:')
+for line in q:
+    line=line.strip()
+    words=line.split()
+    print(words)
+    if words[0][0]==ds[0]and words[1][0]==ds[1]:
+        print(line)
+№6
+w=open('nameslist.txt','w')
+for i in w:
+    i=i.strip().lower()
+    tmp=''
+    prav=True
+    for j in range(len(i)):
+        if i[j]=='u':
+            tmp=''
+        elif i[j]in 'aeio':
+            if tmp<=i[j]:
+                tmp=i[j]
+            else:
+                pravilno=False
+                break
+    if pravilno:
+        print(z)
+№7
+w=open('words.txt')
+okw=0
+sIme=[]
+sAve=[]
+sR=[]
+q=0
+p=0
+l=0
+qw=[]
+for line in w:
+    line=line.strip().split()
+    okw+=len(line)
+    for word in line:
+        if word[-3:]=='ime':
+            sIme.append(word)
+        elif word[1:4]=='ave':
+            sAve.append(word)
+        elif 'r' or 's' or 't' or 'l' or 'n' or 'e' in word:
+            q+=1
+        elif 'a'or 'e' or 'i' or 'o' or 'u' not in word:
+            p+=1
+        elif 'a'or 'e' or 'i' or 'o' or 'u' in word:
+            l+=1
+                                       
+print(sIme)
+print(sAve)
+print((100*q)/okw)
+print(q)
+print(p)
+print(l)
+
+
+def Skruga(radius):
+    return pi*(radius**2)
+pi=3.14
+r=float(input('Введите радиус круга:'))
+print('Функция s=',Skruga(r))
+print('Лямбда-ф s=',(lambda radius: pi*(radius**2))(r))
+
+----------------------Python объектно-ориентированный------------------------
+№1
+class Investment:
+    def __init__(self,principal,interest):
+        self.prin=principal
+        self.inter=interest
+    def value_after(self,n):
+        return self.principal*(1+self.interest)**n
+    def __str__(self):
+        return 'Principal-$(),Interest rate-()%'.format(self.principal,self.interest)
+k=Investment(1000,5.12)
+print(k)
+n=5
+print('Cherez',n,'let budet',k.value_after(n))
+№2
+class Product:
+    def __init__(self,name,amount,price):
+        self.name=name
+        self.amount=amount
+        self.price=price
+    def get_price(self,want):
+        n=want
+        if n>=1 and n<10:
+            return self.price
+        elif n>=10 and n<=99:
+            return self.price - (self.price * 0.1)
+        elif n>=100:
+            return self.price - (self.price * 0.2)
+    def make_purchase(self,n):
+        self.amount -=n
+        return self.amount
+
+
+def celsius_to_fahrenheit(x):
+    return(9/5)*(x+32)
+def fahrenheit_to_celsius(x):
+    return(5/9)*(x-32)
+temp=float(input('Введите число:'))
+c=input('F(ahrenheit) or C(elsius):')
+if c=='F':
+    x=fahrenheit_to_celsius(temp)
+    print(temp,'C=',x,'F')
+else:
+    x=celsius_to_fahrenheit(temp)
+    print(temp,'F=',x,'C')
+
+
+
+
+class Operation:#название класса
+    def __init__(self,plus,pri,otch,pris,spis):
+        self.spis=[]
+        self.plus=plus
+        self.pri=pri
+        self.otch=otch
+        self.pris=pris
+    def pribavit(self):
+        return self.plus+self.pri
+    def minus(self):
+        return self.otch-self.pris
+    def delenie(self):
+        dele=self.plus/self.pri
+        return'():'.format(dele)
+    def umnozhenie(self):
+        umno=self.otch*self.pris
+        return'():'.format(umno)
+    def stepen(self):
+        step=(self.plus+self.pri)**2
+        return'():'.format(step)
+    def znach(self):
+        return self.plus%self.pri==0
+    def diskrim(self):
+        dis=self.(plus**2)-4*self.pri*self.otch
+        return '():'.format(dis)
+    def gold_experience
+
+
+
+class Wordplay:
+    def __init__(self):
+        self.names=['Fas','Rainbow','Savage','rider','Saiyu','someone','Lion','Father','']
+    def words_with_length(self,string,length):
+        self.string=string
+        self.length=length
+    for lett in string:
+        for buks in strings:
+            len(buks.split(string))
+            return buks
+    def starts_with_s(self,char,stringl,listt):
+        self.listt=[]
+        self.char=char
+        self.stringl=stringl
+        for i in string1:
+            if stringl[0]=='s':
+                self.list.append(stringl)
+                return self.listt
+    def end_with_s(self,obrat,naz,listtt):
+        self.obrat=obrat
+        self.naz=naz
+        self.listtt=[]
+        for i in naz:
+            if naz[-1]=='s':
+                self.listtt.append(naz)
+                return self.listtt
+    def only_L_(self,wer,li):
+        self.wer=wer
+        self.li=[]
+        for i in wer:
+            if 'L' in wer:
+                self.li.append(wer)
+                return self.li
+    def avoids_L_(self,get,hyt):
+        self.get=get
+        self.hyt=[]
+        for i in get:
+            if 'L' not in get:
+                self.hyt.append(get)
+                return self.hyt
+    
+
+
+
+
+
+
+
+
+    
+
+        
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
